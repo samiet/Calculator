@@ -1,0 +1,75 @@
+.calc{
+	width: 300px;
+	background-color: #000;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #5a6672;
+	border-radius: 10px;
+	padding: 20px;
+}
+input{
+    color: rgb(191,0,0);
+    font-weight: 700;
+	font-size: 20px;
+	padding: 5px 10px;
+    border: 1px solid #111;
+	border-radius: 5px;
+    box-shadow: inset 0 0px 10px rgba(255,255,255,.3);
+}
+input:focus{
+	outline: none;
+}
+input[type="submit"]{
+	width: 72px;
+	margin-bottom: 5px;
+    background-color: #111;
+}
+input.action, #backspace, #delete,#plusMin,#disp,#result{
+    background-color: rgb(211,0,0);
+    box-shadow: inset 0 0px 10px rgba(0,0,0,.3);
+    color: #000;
+}
+input[type="submit"]:active{
+	box-shadow: inset 0 0px 20px rgba(0,0,0,1);
+    border-color: #000;
+}
+input.action:active, #backspace:active, #delete:active,#plusMin:active,#disp:active,#result:active{
+	box-shadow: inset 0 0px 10px rgba(0,0,0,1);
+    background-color: rgb(147,7,7);
+}
+#result{
+    width: 129px;
+}
+input.value{
+    width: 53px;
+}
+input[value="+"]{
+	height: 75px;
+    float: right;
+}
+input[value="."]{
+    width: 53px;
+    background-color: #111;
+    box-shadow: inset 0 0px 10px rgba(255,255,255,.3);
+    color: rgb(191,0,0);
+    &:active{
+        box-shadow: inset 0 0px 20px rgba(0,0,0,1);
+        border-color: #000; 
+        background-color: #111;
+    }
+}
+textarea{
+	width: 289px;
+	padding: 5px 5px 5px 5px;
+	margin-bottom: 10px;
+    font-size: 1.5em;
+	text-align: right;
+	background: linear-gradient(to top, #fff, #ecf3fb);
+    &:focus{
+        outline: 2px solid rgb(191,0,0);
+    }
+}
+p{
+    overflow-wrap: break-word;
+    color: rgb(191,0,0);
+}
